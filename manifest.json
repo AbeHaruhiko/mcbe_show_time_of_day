@@ -1,0 +1,27 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "定期的にゲーム内時刻を表示するアドオン",
+        "description": "10秒ごとに時刻を表示し、日没が近づくとモンスターへの注意をうながす。",
+        "uuid": "49e0e66d-081e-47a7-bfa6-a805629a1fc0",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 21, 50 ]
+    },
+    "modules": [
+
+        {
+            "description": "Script API",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "dbca545c-bf13-4724-bf8e-e2d3112d6e3b",
+            "entry": "scripts/main.js",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.16.0"
+        }
+    ]
+}
