@@ -1,0 +1,2 @@
+# mcbe_show_time_of_day
+Minecraft統合版で定期的にゲーム内時刻を表示するアドオン（ビヘイビアーパック）
