@@ -8,7 +8,7 @@ system.runInterval(() => {
     let hour = Math.floor(timeOfDay);
 
     // 小数部分を取得
-    const minute = ("0" + Math.floor((timeOfDay - hour) * 60)).slice(-2);
+    const minute = Math.floor((timeOfDay - hour) * 60).toString().padStart(2, '0');
 
     // 24時以降の時刻表示を修正
     if (hour >= 24) {
