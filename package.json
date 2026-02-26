@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "npx tsc",
+    "pack": "npx tsc && python3 -c \"import zipfile; zf=zipfile.ZipFile('show_time_of_day.mcpack','w',zipfile.ZIP_DEFLATED); [zf.write(f,f) for f in ['manifest.json','pack_icon.png','scripts/main.js']]; zf.close(); print('Done: show_time_of_day.mcpack')\"",
     "clean": "npx tsc --build --clean"
   },
   "dependencies": {
